@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.alert{
+   margin-bottom: 20px;
+}
+.danger{
+    padding: 7px;
+    background-color: #d12d2d;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.success{
+    padding: 7px;
+    background-color: #2dd16c;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.info{
+    padding: 7px;
+    background-color: #2d7ad1;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+    background-color: #ececec;
+}
+.app{
+    display: flex;
+    padding: 20px;
+}
+.titlecard{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.card{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: #fff;
+}
+#name, #price ,#button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#button{
+    background-color: #25373c;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+}
+.product{
+    width: 100%;
+    height: 50px; 
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin-right: 100px;
+    background-color: #fff;
+    padding-top: 15px;
+}
+
+/*Home styles*/
+
+.container-body{
+    
+    display: flex;
+    width: 100%;
+}
+.nav{
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, .3);
+    background-color: rgba(0, 0, 0, .1);
+}
+.menu{
+    width: 100%;
+    height: 80px;
+    /*padding: 20px;*/
+    background-color: #fff;
+    color: #fff;
+    position: relative;
+    background-color: #16406b;
+}
+.logo{
+    width: 15%;
+    min-width: 200px;
+    height: 80px;
+    padding: 20px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #16406b;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+.sidebar{
+    width: 15%;
+    min-width: 200px;
+    height: 100vh;
+    background-color: #2c2c2c;  
+}
+.bxs-home,.bx-upload,.bxs-group{
+    padding-right: 5px;
+}
+.link{
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    display: flex;  
+    padding: 20px;
+    align-items: center;
+}
+.link:hover{
+    background-color: #274163;
+}
+.main-container{
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+    background-color: #ececec;
+}
+.title-main{
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px 0;
+}
+.panel{
+    font-weight: 300;
+    font-size: 25px;
+}
+.options{
+    width: 100%;
+    height: 150px;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+}
+.quick-access{
+    width: 20%;
+    height: 150px;
+    background-color: #000;
+    box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, .2);
+}
+
+.ventas{
+    background-color:  #1fcaf1;
+}
+.compras{
+    background-color:  #3dbf53;
+}
+.proveedores{
+    background-color:  #f3c212;
+}
+.reportes{
+    background-color:  #ea431d;
+}
+.info-link{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    display: flex;
+}
+.container-link{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .1);
+    padding: 5px;
+    text-align: center;
+}
+.container-link:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+.card-link{
+    /*padding: 10px;*/
+    text-decoration: none;
+    color: #fff;
+}
+.title-link{
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    
+}
+.text, .icon{
+    width: 50%;
+}
+
+.bx-dollar,.bx-cart-alt,.bxs-truck, .bxs-report{
+    font-size: 80px;
+    color: rgba(0, 0, 0, .1)
+}
+
+.bxs-right-arrow-circle{
+    margin-left: 5px;
+    font-size: 18px;
+}
+.sell{
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.title-sell{
+    width: 47%;
+    height: 100%;
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, .2);
+}
+.text1{
+    font-weight: 300;
+}
+@media screen and (max-width: 800px) {
+    .options{
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+    .sidebar{
+        display: none;        
+    }
+    .quick-access{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    /*.logo{
+        display: none;
+    }*/
+}
+
+/*LOGIN STYLES*/
+
+.container-login{
+    width: 100%;
+    height: 100vh;
+    background-color: #274163 ;
+    display: flex;
+}
+.login{
+    width: 20%;
+    height: 40%;
+    margin: auto;
+    /*border: 1px solid   #000;*/
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
+}
+#email, #password, #login{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}

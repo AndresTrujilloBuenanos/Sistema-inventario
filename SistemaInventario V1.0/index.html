@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SistemaDeVentas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/img/logo.png">
+</head>
+<body> 
+    <header class="menu">
+        <div class="logo">
+            <h1 class="title">Inventario</h1>    
+        </div>           
+    </header>
+
+    <div class="container-body">
+        <nav class="sidebar">
+            <p class="nav">Menú de navegación</p>
+            <a href="home.html" class="link"><i class='bx bxs-home'></i>Inicio</a>
+            <a href="index.html" class="link"><i class='bx bx-upload' ></i>Crear producto</a>
+            <a href="#" class="link"><i class='bx bxs-group' ></i>Clientes</a>
+
+
+        </nav>
+        
+        <div class="container">
+            <div class="app">
+
+                <div class="card">
+                    <div class="titlecard">
+                        <h1>AGREGAR PRODUCTO</h1>
+                    </div>
+                    <form id="product-form">
+                        <input type="text" id="name" placeholder="Nombre del producto">
+                        <input type="number" step="0.01" id="price" placeholder="Precio del producto">
+                        <input type="submit" value="Crear" id="button">
+                    </form>
+                </div>
+                <div id="product-list"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
